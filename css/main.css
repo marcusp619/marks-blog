@@ -31,19 +31,19 @@ Dark Blue:       #061539;
       clip-path: polygon(0 0, 100% 0%, 100% 65vh, 0 100%);
   }
 
-  .logo-box {
+  .header__logo-box {
     position: absolute;
     top: 40px;
     left: 60px;
   }
 
-  .logo {
+  .header__logo {
     color: rgba(255, 255, 255, 0.8);
     font-size: 2rem;
     border-bottom: 2px solid rgba(255, 255, 255, 0.8); 
   }
 
-  .text-box {
+  .header__text-box {
     position: absolute;
     top: 40%;
     left: 50%;transform: translate(-50%, -50%);
@@ -56,7 +56,7 @@ Dark Blue:       #061539;
     margin-bottom: 60px;
   }
 
-  .heading-primary-main {
+  .heading-primary--main {
     display: block;
     font-size: 60px;
     font-weight: 400;
@@ -65,7 +65,7 @@ Dark Blue:       #061539;
     animation: moveInLeft 1s ease-in;
   }
 
-  .heading-primary-sub {
+  .heading-primary--sub {
     display: block;
     font-size: 20px;
     font-weight: 400;
@@ -146,7 +146,7 @@ Dark Blue:       #061539;
     box-shadow: 0 5px 5px rgba(0,0,0,.2);
   }
 
-  .btn-white {
+  .btn--white {
     background-color: #fff;
     color: #777;
   }
@@ -165,7 +165,7 @@ Dark Blue:       #061539;
     transition: all .4s;
   }
 
-  .btn-white::after {
+  .btn--white::after {
     background-color: #fff;
   }
 
@@ -174,7 +174,7 @@ Dark Blue:       #061539;
     opacity: 0;
   }
 
-  .btn-animate {
+  .btn--animate {
     animation: moveInBottom 1s ease-out .75s;
     animation-fill-mode: backwards;
   }

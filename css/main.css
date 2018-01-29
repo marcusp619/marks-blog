@@ -51,6 +51,8 @@ Dark Blue:       #061539;
 
   .heading-primary {
     text-transform: uppercase;
+
+    backface-visibility: hidden;
   }
 
   .heading-primary-main {
@@ -58,6 +60,8 @@ Dark Blue:       #061539;
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 15px;
+    
+    animation: moveInLeft 1s ease-in;
   }
 
   .heading-primary-sub {
@@ -65,4 +69,41 @@ Dark Blue:       #061539;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 10px;
+
+    animation: moveInRight 1s ease-in;
+  }
+
+
+  @keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px); 
+    }
+
+    80% {
+      transform: translateX(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+    /* transform: translateX... makes it move from left to right */
+  }
+
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100px); 
+    }
+
+    80% {
+      transform: translateX(-20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+    /* transform: translateX... makes it move from left to right */
   }

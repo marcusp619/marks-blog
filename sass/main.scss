@@ -3,6 +3,8 @@ $color-grey-blue: #4F628E;
 $color-evening-blue: #162955;
 $color-dark-blue: #061539;
 $color-white: #fff;
+$color-black: #000;
+
 * {
   margin: 0;
   padding: 0;
@@ -24,50 +26,52 @@ body {
     background-size: cover;
     background-position: center;
     clip-path: polygon(0 0, 100% 0%, 100% 65vh, 0 100%);
-}
 
-.header__logo-box {
-  position: absolute;
-  top: 40px;
-  left: 60px;
-}
+    &__logo-box {
+      position: absolute;
+      top: 40px;
+      left: 60px;
+    }
 
-.header__logo {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 2rem;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.8); 
-}
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;transform: translate(-50%, -50%);
-  text-align: center;
+    &__logo {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 2rem;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.8); 
+    }
+    
+    &__text-box {
+      position: absolute;
+      top: 40%;
+      left: 50%;transform: translate(-50%, -50%);
+      text-align: center;
+    }
 }
 
 .heading-primary {
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 60px;
-}
 
-.heading-primary--main {
-  display: block;
-  font-size: 60px;
-  font-weight: 400;
-  letter-spacing: 15px;
+  &--main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 15px;
+    
+    animation: moveInLeft 1s ease-in;
+  }
   
-  animation: moveInLeft 1s ease-in;
+  &--sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 5px;
+  
+    animation: moveInRight 1s ease-in;
+  }
 }
 
-.heading-primary--sub {
-  display: block;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 5px;
 
-  animation: moveInRight 1s ease-in;
-}
 
 
 @keyframes moveInLeft {
@@ -120,56 +124,58 @@ body {
   }
 }
 
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 15px 35px;
-  display: inline-block;
-  border-radius: 100px;
-  position: relative;
-  transition: all .2s;
-}
-
-.btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 10px rgba(0,0,0,.2);
-}
-
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 5px rgba(0,0,0,.2);
-}
-
-.btn--white {
-  background-color: $color-white;
-  color: #777;
-}
-
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 35px;
+    display: inline-block;
+    border-radius: 100px;
+    position: relative;
+    transition: all .2s;
+  }
   
-  transition: all .4s;
-}
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
 
-.btn--white::after {
-  background-color: $color-white;
-}
+    &::after {
+      transform: scaleX(1.3) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+  }
+  
+  &--white {
+    background-color: $color-white;
+    color: #777;
 
-.btn:hover::after {
-  transform: scaleX(1.3) scaleY(1.6);
-  opacity: 0;
-}
-
-.btn--animate {
-  animation: moveInBottom 1s ease-out .75s;
-  animation-fill-mode: backwards;
+    &::after {
+      background-color: $color-white;
+    }
+  }
+  
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+    transition: all .4s;
+  }
+  
+  &--animate {
+    animation: moveInBottom 1s ease-out .75s;
+    animation-fill-mode: backwards;
+  }
 }

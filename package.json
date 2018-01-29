@@ -4,7 +4,7 @@
   "description": "Blog about my coding journey",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/main.css -w"
   },
   "keywords": [
     "Mark",

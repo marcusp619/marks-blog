@@ -8,14 +8,14 @@
   
   &__logo-box {
     position: absolute;
-    top: 40px;
-    left: 60px;
+    top: 4rem;
+    left: 6rem;
   }
 
   &__logo {
     color: rgba(255, 255, 255, 0.8);
     font-size: 2rem;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.8); 
+    border-bottom: .2rem solid rgba(255, 255, 255, 0.8); 
   }
   
   &__text-box {

@@ -3,5 +3,9 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* borders and padding no longer added to the height or with */
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // root font size of browsers is 16px
 }

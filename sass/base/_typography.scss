@@ -53,6 +53,12 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: $color-grey-blue; //change color
+  background-image: linear-gradient(to right, rgba($color-almost-lavendar, 0.9), rgba($color-dark-blue, 0.9));
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: all .2s;
 }
 
 .paragraph {

@@ -44,7 +44,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #fff;
+  color: #ffffff;
   padding: 3rem;
   /* the border around the entire webpage */
   box-sizing: border-box;
@@ -84,7 +84,13 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #4F628E; }
+  color: #4F628E;
+  background-image: linear-gradient(to right, rgba(120, 135, 171, 0.9), rgba(6, 21, 57, 0.9));
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: all .2s; }
 
 .paragraph {
   font-size: 1.6rem;
@@ -126,10 +132,10 @@ body {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2); }
 
 .btn--white {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #777; }
   .btn--white::after {
-    background-color: #fff; }
+    background-color: #ffffff; }
 
 .btn::after {
   content: "";
@@ -158,7 +164,7 @@ body {
 
 .btn-text:hover {
   background-color: #4F628E;
-  color: #fff;
+  color: #ffffff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 
@@ -180,7 +186,7 @@ body {
       top: 1.5rem; }
     .composition__photo:hover {
       outline: 0.3rem solid #4F628E;
-      transform: scale(1.05);
+      transform: scale(1.15);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
 
 .blog-box {
@@ -189,7 +195,10 @@ body {
   padding: 2.5rem;
   text-align: center;
   border-radius: 4px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .5s; }
+  .blog-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
 
 .row {
   max-width: 114rem;
@@ -231,7 +240,7 @@ body {
   background-size: cover;
   background-position: center;
   clip-path: polygon(0 0, 100% 0%, 100% 65vh, 0 100%);
-  color: #fff; }
+  color: #ffffff; }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -254,6 +263,9 @@ body {
 
 .blog-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to bottom right, rgba(120, 135, 171, 0.9), rgba(6, 21, 57, 0.9)), url(../img/hero.jpg);
+  background-image: linear-gradient(to bottom right, rgba(120, 135, 171, 0.9), rgba(6, 21, 57, 0.9)), url(../img/blog-bg.jpeg);
   background-size: cover;
-  margin: 0 auto; }
+  margin-top: -7.2rem;
+  transform: skewY(-7deg); }
+  .blog-features > * {
+    transform: skewY(7deg); }

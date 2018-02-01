@@ -6,7 +6,13 @@
 
 .blog-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to bottom right, rgba($color-almost-lavendar, 0.9), rgba($color-dark-blue, 0.9)), url(../img/hero.jpg); //change image
+  background-image: linear-gradient(to bottom right, rgba($color-almost-lavendar, 0.9), rgba($color-dark-blue, 0.9)), url(../img/blog-bg.jpeg); //change image
   background-size: cover;
-  margin: 0 auto;
+  margin-top: -7.2rem;
+
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
 }

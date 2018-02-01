@@ -5,6 +5,8 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
     border-radius: 3rem;
     position: absolute;
+    transition: all .5s;
+    outline-offset: 1rem;
 
     &--p1 {
       left: 0;
@@ -12,6 +14,7 @@
     }
 
     &:hover {
+      outline: .3rem solid $color-grey-blue;
       transform: scale(1.05);
       box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
     }

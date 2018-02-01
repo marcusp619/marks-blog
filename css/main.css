@@ -68,7 +68,7 @@ body {
     animation: moveInRight 1s ease-in; }
 
 .heading-secondary {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
   background-image: linear-gradient(to right, rgba(120, 135, 171, 0.9), rgba(6, 21, 57, 0.9));
@@ -172,13 +172,24 @@ body {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 3rem;
-    position: absolute; }
+    position: absolute;
+    transition: all .5s;
+    outline-offset: 1rem; }
     .composition__photo--p1 {
       left: 0;
       top: 1.5rem; }
     .composition__photo:hover {
+      outline: 0.3rem solid #4F628E;
       transform: scale(1.05);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
+
+.blog-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
 
 .row {
   max-width: 114rem;
@@ -240,3 +251,9 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -30vh; }
+
+.blog-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to bottom right, rgba(120, 135, 171, 0.9), rgba(6, 21, 57, 0.9)), url(../img/hero.jpg);
+  background-size: cover;
+  margin: 0 auto; }

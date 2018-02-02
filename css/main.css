@@ -132,10 +132,10 @@ body {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2); }
 
 .btn--white {
-  background-color: #ffffff;
-  color: #777; }
+  background-color: #daa520;
+  color: #ffffff; }
   .btn--white::after {
-    background-color: #ffffff; }
+    background-color: #daa520; }
 
 .btn::after {
   content: "";
@@ -246,9 +246,9 @@ body {
     top: 4rem;
     left: 6rem; }
   .header__logo {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(218, 165, 32, 0.8);
     font-size: 2rem;
-    border-bottom: 0.2rem solid rgba(255, 255, 255, 0.8); }
+    border-bottom: 0.2rem solid rgba(218, 165, 32, 0.8); }
   .header__text-box {
     position: absolute;
     top: 40%;

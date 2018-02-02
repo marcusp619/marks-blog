@@ -13,9 +13,9 @@
   }
 
   &__logo {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba($color-goldenrod, 0.8);
     font-size: 2rem;
-    border-bottom: .2rem solid rgba(255, 255, 255, 0.8); 
+    border-bottom: .2rem solid rgba($color-goldenrod, 0.8); 
   }
   
   &__text-box {

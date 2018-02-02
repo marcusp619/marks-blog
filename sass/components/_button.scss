@@ -27,11 +27,11 @@
   }
   
   &--white {
-    background-color: $color-white;
-    color: #777;
+    background-color: $color-goldenrod;
+    color: $color-white;
 
     &::after {
-      background-color: $color-white;
+      background-color: $color-goldenrod;
     }
   }
   

@@ -6,6 +6,8 @@
   border-radius: 4px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
   transition: transform .5s;
+  height: 50rem;
+  width: 100%;
 
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);

@@ -301,6 +301,40 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+.footer {
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: #4F628E; }
+  .footer__navigation {
+    border-top: 2px solid darkgray;
+    padding-top: 2.1rem;
+    display: inline-block; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #4F628E;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.3s; }
+  .footer__link:hover, .footer__link:active {
+    background-color: #4F628E;
+    color: #ffffff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: rotate(5deg) scale(1.3);
+    border-radius: 3px;
+    padding: .5rem; }
+  .footer__copyright {
+    border-top: 2px solid darkgray;
+    padding-top: 1.9rem;
+    width: 80%;
+    float: right;
+    display: inline-block; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;

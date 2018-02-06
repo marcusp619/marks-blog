@@ -7,9 +7,24 @@
         <meta name="description" content="valid">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/main.js"></script>
     </head>
     <body>
+        <!-- <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            
+            <label for="navi-toggle" class="navigation__button">MENU</label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">Blog</a</li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">About Me</a</li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Contact Me</a</li>
+                </ul>
+            </nav>
+        </div> -->
+
         <header class="header">
             <div class="header__logo-box">
                 <span class="header__logo">MP</span>
@@ -21,7 +36,7 @@
                     <span class="heading-primary--sub">V 2.0.1.8</span>
                 </h1>
 
-                <a href="#" class="btn btn--white btn--animate">Head To Blogs</a>
+                <a href="#blog" class="btn btn--white btn--animate">Head To Blogs</a>
             </div>
         </header>
 
@@ -44,7 +59,7 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum in harum labore, modi ab deleniti vitae suscipit nostrum vero aliquam.
                         </p>
 
-                        <a href="#" class="btn-text">Learn More &rarr;</a>
+                        <a href="https://www.linkedin.com/in/mark-pearyer/" target="_blank" class="btn-text">Learn More &rarr;</a>
                     </div>
                     
                     <div class="col-1-of-2">
@@ -55,7 +70,7 @@
                 </div>
             </section>
 
-            <section class="blog-features">
+            <section class="blog-features" id="blog">
                 <div class="row">
                     <div class="col-1-of-4">
                         <div class="blog-box">
@@ -63,6 +78,7 @@
                             <p class="blog__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit
                             </p>
+                            <a href="blog.html" class="btn btn--white">Click To Read</a>
                         </div>
                     </div>
 
@@ -72,6 +88,7 @@
                             <p class="blog__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit
                             </p>
+                            <a href="blog.html" class="btn btn--white">Click To Read</a>
                         </div>
                     </div>
 
@@ -81,6 +98,7 @@
                             <p class="blog__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit        
                             </p>
+                            <a href="blog.html" class="btn btn--white">Click To Read</a>
                         </div>
                     </div>
 
@@ -90,6 +108,7 @@
                             <p class="blog__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit
                             </p>
+                            <a href="blog.html" class="btn btn--white">Click To Read</a>
                         </div>
                     </div>
                 </div>
@@ -131,9 +150,10 @@
             <div class="col-1-of-2">
                 <div class="footer__navigation">
                     <ul class="footer__list">
-                        <li class="footer__item"><a href="#" class="footer__link">Contact Me</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">About Me</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Blogs</a></li>
+                        <li class="footer__item"><a href="contact.html" class="footer__link">Contact Me</a></li>
+                        <li class="footer__item"><a href="about.html" class="footer__link">About Me</a></li>
+                        <li class="footer__item"><a href="#blog" class="footer__link">Blogs</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -212,4 +232,5 @@
 
 
     </body>
+    <script src="js/main.js"></script>
 </html>

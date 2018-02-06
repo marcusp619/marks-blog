@@ -177,6 +177,9 @@ body {
 .form button {
   background-color: #4F628E; }
 
+.blog-box a {
+  top: 20rem; }
+
 .composition {
   position: relative; }
   .composition__photo {
